@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos</title>
+    <script src="https://agomcue486.github.io/lenguajes-de-marcas/GoogleSheetDataBase.js"></script>
+    <style>
+    
+    body {
+        background-color: #2A2550;
+    }
+    div.juegos {
+        display: flex;
+        flex-wrap: wrap;
+    }    
+    div.juego {
+        border: 2px solid black;
+        flex-grow: 1;
+        width: 400px;
+        padding-left: 10px;
+        margin: 15px;
+        background-color: white;       
+    }   
+    div.juego:hover {
+        
+        box-shadow: 4px 4px 4px;    
+    }
+    h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }      
+    img {
+        width: 200px;    
+    }
+    a {
+        margin-left: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+    }
+    div.enlaces a:hover {
+        color: yellow;
+    }
+    button:hover {
+            background-color: red;
+
+        }
+        button {
+            border-radius: 5px;  
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div.cierre {
+            position: sticky;
+            bottom: 0px;
+            left: 100%;
+            background-color: aqua;
+            height: 30px;
+            border: aqua solid 3px;
+            border-radius: 5px;
+            width: 200px;
+            padding-top: 8px;
+        }
+        
+    
+    </style>
+</head>
+<body>
+    
+        <h1 style="color: white;">Juegos</h1> 
+    
+    <div id="resultado"></div>
+
+    <div class="cierre"><a href="inicio-sesion.html">Click aquí para cerrar sesión</a></div>
+
+    <script src="consultarJuegos.js"></script>
+</body>
+</html>

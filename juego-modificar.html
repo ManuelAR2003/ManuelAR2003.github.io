@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar juego</title>
+    <script src="https://agomcue486.github.io/lenguajes-de-marcas/GoogleSheetDataBase.js"></script>
+    <script src="juego-modificar.js"></script>
+    <style> 
+    body {
+        background-color: #2A2550;
+        color: white;
+    }
+    input {
+        background-color: white;
+        color: #2A2550;
+    }
+    button:hover {
+            background-color: #2A2550;
+
+        }
+        button {
+            border-radius: 5px;  
+        }
+        h1 {
+            text-align: center;
+        }</style>
+</head>
+
+<body>
+
+    <h1 style="color: white;">Modificar el juego elegido</h1>
+    <p>Titulo:  <input type="text" id="inputTitulo"></p>
+    <p>Género: <input type="number" id="inputGenero"></p>
+    <p>Compañía: <input type="number" id="inputCompania"></p>
+    <p>Fecha: <input type="date" id="inputFecha"></p>
+    <p>Sinopsis: <input type="text" id="inputSinopsis"></p>
+    <p>Imagen: <input type="text" id="inputImagen"></p>
+
+    <button onclick="modificarDatos()">Modificar datos</button>
+    
+</body>
+
+</html>

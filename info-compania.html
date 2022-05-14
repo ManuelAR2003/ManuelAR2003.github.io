@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info del genero elegido</title>
+    <script src="https://agomcue486.github.io/lenguajes-de-marcas/GoogleSheetDataBase.js"></script>
+    <style>
+        div.juego {
+    overflow: auto;
+    border: 2px dashed black;
+}
+
+img  {
+    float: left;
+    margin-right: 25px;
+    height: 200px;
+}
+
+div.info {
+    overflow: auto;
+}
+div.juego {
+    background-color: white
+
+}
+body {
+    background-color: #2A2550
+}
+h1 {
+    color: white;
+}
+button:hover {
+            background-color: #2A2550;
+
+        }
+        button {
+            border-radius: 5px;  
+        }
+        h1 {
+            text-align: center;
+        }
+        div.cierre {
+            position: sticky;
+            bottom: 0px;
+            left: 100%;
+            background-color: aqua;
+            height: 30px;
+            border: aqua solid 3px;
+            border-radius: 5px;
+            width: 200px;
+            padding-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="compania" style="color: white;">Compañía</h1>
+
+    <div class="juego">
+        <img id="logo" src="#" alt="#">
+
+        <div class="info">
+           <h3>Género</h3><p id="genero">Género</p>
+           <h3>Localización</h3> <p id="localizacion">Localización</p>
+           <h3>Descripción</h3> <p id="descripcion">Descripción</p>
+        </div>
+    </div>
+
+    <div class="cierre"><a href="inicio-sesion.html">Click aquí para cerrar sesión</a></div>
+
+    <script src="consultarInfoCompania.js"></script>
+</body>
+</html>

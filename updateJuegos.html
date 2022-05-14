@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>updateJuegos</title>
+    <script src="https://agomcue486.github.io/lenguajes-de-marcas/GoogleSheetDataBase.js"></script>
+    <script src="updateJuegos.js"></script>
+    <style>
+
+        body {
+            background-color: #2A2550;
+            color: white;
+        }
+        input {
+            background-color: white;
+            color: #2A2550;
+        }
+        button:hover {
+            background-color: #2A2550;
+
+        }
+        button {
+            border-radius: 5px;  
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: white;">Cambie el Juego de la id que quiera</h1>
+
+
+
+    <table>
+        <tr>
+            <td><label for="key">ID del juego</label></td>
+            <td><input type="number" id="key" value=""></td>
+        </tr>
+        <tr>
+            
+            <td><label for="columnValue1">Título</label></td>
+            <td><input type="text" id="columnValue1" value=""></td>
+        </tr>
+        <tr>
+            
+            <td><label for="columnValue2">Género</label></td>
+            <td><input type="number" id="columnValue2" value=""></td>
+        </tr>
+        <tr>
+            
+            <td><label for="columnValue3">Compañía</label></td>
+            <td><input type="number" id="columnValue3" value=""></td>
+        </tr>
+        <tr>
+            
+            <td><label for="columnValue4">Fecha    </label></td>
+            <td><input type="text" id="columnValue4" value=""></td>
+        </tr>
+        <tr>
+            
+            <td><label for="columnValue1">Sinopsis    </label></td>
+            <td><input type="text" id="columnValue5" value=""></td>
+        </tr>
+        <tr>
+            
+            <td><label for="columnValue6">Imagen   </label></td>
+            <td><input type="text" id="columnValue6" value=""></td>
+        </tr>
+    </table>
+
+    <button onclick="update()">Insertar una fila</button>
+
+    <h1>Información del resultado</h1>
+    <p>¿Hay error?: <span id="error"></span></p>
+    <p>Mensaje: <span id="message"></span></p>
+    
+</body>
+</html>

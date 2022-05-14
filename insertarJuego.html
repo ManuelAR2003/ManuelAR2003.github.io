@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://agomcue486.github.io/lenguajes-de-marcas/GoogleSheetDataBase.js"></script>
+    <title>Insertar juego</title>
+    <style>
+        body {
+            background-color: #2A2550;
+        }
+        input {
+            background-color: white;
+            color: #2A2550;
+        }
+        td {
+            color: white;
+        }
+        h1 {
+            color: white;
+        }
+        button:hover {
+            background-color: red;
+
+        }
+        button {
+            border-radius: 5px;  
+        }
+        h1 {
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1 style="color: white;">Insertar un juego</h1>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td><input type="number" id="id"></td>
+        </tr>
+        <tr>
+            <td>Título</td>
+            <td><input type="text" id="titulo"></td>
+        </tr>
+        <tr>
+            <td>Género (1-9)</td>
+            <td><input type="number" id="genero"></td>
+        </tr>
+        <tr>
+            <td>Compañía (1-10)</td>
+            <td><input type="number" id="compania"></td>
+        </tr>
+        <tr>
+            <td>Fecha (Introduzca el año que salió el juego)</td>
+            <td><input type="text" id="fecha"></td>
+        </tr>
+        <tr>
+            <td>Enlace de la imagen</td>
+            <td><input type="text" id="imagen"></td>
+        </tr>
+        <tr>
+            <td>Sinopsis</td>
+            <td><input type="text" id="sinopsis"></td>
+        </tr>
+    </table>
+
+    <p>
+        <button onclick="insertarJuego()" id="btnInsertar">Insertar juego</button>
+    </p>
+
+    <script src="insertarJuego.js"></script>
+</body>
+
+</html>

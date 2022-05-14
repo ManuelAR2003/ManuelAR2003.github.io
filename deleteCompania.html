@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deleteCompañía</title>
+    <script src="https://agomcue486.github.io/lenguajes-de-marcas/GoogleSheetDataBase.js"></script>
+    <script src="deleteCompania.js"></script>
+    <style>
+        body {
+            color: white;
+            background-color: #2A2550;
+        }
+        input {
+            background-color: white;
+            color: white;
+        }
+        button:hover {
+            background-color: #2A2550;
+
+        }
+        button {
+            border-radius: 5px;  
+        }
+        h1 {
+            text-align: center;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <h1 style="color: white;">Aquí puede borrar algúna compañía</h1>
+
+    <table>
+        <tr>
+            <td><label for="key">ID de la compañía</label></td>
+            <td><input type="number" id="key" value=""></td>
+        </tr>
+    </table>
+
+    <button onclick="ddelete()">Borrar una fila</button>
+
+    <h1>Información del resultado</h1>
+    <p>¿Hay error?: <span id="error"></span></p>
+    <p>Mensaje: <span id="message"></span></p>
+    
+</body>
+</html>

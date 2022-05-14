@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://agomcue486.github.io/lenguajes-de-marcas/GoogleSheetDataBase.js"></script>
+    <title>Insertar genero</title>
+    <style>
+        body {
+            background-color: #2A2550;
+        }
+        input {
+            background-color: white;
+            color: #2A2550;
+        }
+        td {
+            color: white;
+        }
+        h1 {
+            color: white;
+        }
+        button:hover {
+            background-color: #2A2550;
+
+        }
+        button {
+            border-radius: 5px;  
+        }
+        h1 {
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1 style="color: white;">Insertar un juego</h1>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td><input type="number" id="id"></td>
+        </tr>
+        <tr>
+            <td>Género</td>
+            <td><input type="text" id="genero"></td>
+        </tr>
+        <tr>
+            <td>Descripción</td>
+            <td><input type="text" id="descripcion"></td>
+        </tr>
+        <tr>
+            <td>Ejemplo</td>
+            <td><input type="text" id="ejemplos"></td>
+        </tr>
+        <tr>
+            <td>Enlace de la imagen</td>
+            <td><input type="text" id="imagen"></td>
+        </tr>
+    </table>
+
+    <p>
+        <button onclick="insertarGeneros()" id="btnInsertar">Insertar genero</button>
+    </p>
+
+    <script src="insertarGeneros.js"></script>
+</body>
+
+</html>

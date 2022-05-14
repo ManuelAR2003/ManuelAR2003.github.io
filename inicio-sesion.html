@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://agomcue486.github.io/lenguajes-de-marcas/GoogleSheetDataBase.js"></script>
+    <script src="info-sesion.js"></script>
+    <title>Inicio Sesión</title>
+    <style>
+
+        
+        body {
+            background-color: #2A2550;
+        }
+        input {
+            background-color: white;
+            color: #2A2550;
+        }
+        td {
+            color: white;
+        }
+        h1 {
+            color: white;
+        }
+        button:hover {
+            background-color: red; 
+        }
+        button {
+            border-radius: 5px;  
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center; color: white;" >Inicio de sesión</h1>
+
+    <table>
+        <h2>Iniciar Sesión</h2>
+        <tr>
+            <td>Usuario</td>
+            <td><input type="text" id="user"></td>
+        </tr>
+        <tr>
+            <td>Contraseña</td>
+            <td><input type="password" id="contrasenia"></td>
+        </tr>
+    </table>
+    <button onclick="ComprobarUsuario()">Entrar</button>
+    <p id="info"></p>
+    <table>
+        <h2>Registro</h2>
+        <tr>
+            <td>Usuario</td>
+            <td><input type="text" id="user2"></td>
+        </tr>
+        <tr>
+            <td>Contraseña</td>
+            <td><input type="password" id="contrasenia2"></td>
+        </tr>
+        <tr>
+            <td>Tipo</td>
+            <td><input type="text" id="tipo2"></td>
+        </tr>
+    </table>
+
+    <p id="info"></p>
+
+    <button onclick="insertarUsuario()">Registro</button>
+    
+    
+</body>
+</html>
